@@ -38,6 +38,11 @@ echo "#!/bin/bash" | cat > $Q7/createApplication.sh && chmod +x $Q7/createApplic
 
 Q8=troubleshooting-openshift
 mkdir -p $Q8
+mkdir -p $Q8/tools
+echo "#!/bin/bash" | cat > $Q8/tools/getStrings && echo "hello strings this is example output" | cat >> $Q8/tools/getStrings && chmod +x $Q8/tools/getStrings.sh ;
+echo "#!/bin/bash" | cat > $Q8/tools/getStrings && echo "/work/tools/getStrings" | cat >> $Q8/tools/getStrings && chmod +x $Q8/tools/getStrings.sh ;
+
+
 echo "#!/bin/bash" | cat > $Q8/getLogs.sh && chmod +x $Q8/getLogs.sh ;
 echo "#!/bin/bash" | cat > $Q8/copyScript.sh && chmod +x $Q8/copyScript.sh ;
 echo "#!/bin/bash" | cat > $Q8/printScript.sh && chmod +x $Q8/printScript.sh ;
